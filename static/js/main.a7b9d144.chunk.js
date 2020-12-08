@@ -1,0 +1,2 @@
+(this["webpackJsonpbroadcast-ui"]=this["webpackJsonpbroadcast-ui"]||[]).push([[0],{7:function(t,e,n){},8:function(t,e,n){"use strict";n.r(e);var a=n(0),o=n.n(a),c=n(2),i=n.n(c),s=(n(7),function(t){t&&t instanceof Function&&n.e(3).then(n.bind(null,9)).then((function(e){var n=e.getCLS,a=e.getFID,o=e.getFCP,c=e.getLCP,i=e.getTTFB;n(t),a(t),o(t),c(t),i(t)}))}),r=o.a.createElement("h1",{className:"greeting"},"Hello, world! Test Update Git");i.a.render(r,document.getElementById("root")),s()}},[[8,1,2]]]);
+//# sourceMappingURL=main.a7b9d144.chunk.js.map

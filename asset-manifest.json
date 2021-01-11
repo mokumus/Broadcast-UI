@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/Broadcast-UI/static/js/main.34f72773.chunk.js",
-    "main.js.map": "/Broadcast-UI/static/js/main.34f72773.chunk.js.map",
+    "main.js": "/Broadcast-UI/static/js/main.c64bd707.chunk.js",
+    "main.js.map": "/Broadcast-UI/static/js/main.c64bd707.chunk.js.map",
     "runtime-main.js": "/Broadcast-UI/static/js/runtime-main.62a46328.js",
     "runtime-main.js.map": "/Broadcast-UI/static/js/runtime-main.62a46328.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/Broadcast-UI/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.dd11f589.chunk.js": "/Broadcast-UI/static/js/2.dd11f589.chunk.js",
-    "static/js/2.dd11f589.chunk.js.map": "/Broadcast-UI/static/js/2.dd11f589.chunk.js.map",
+    "static/js/2.688e9812.chunk.js": "/Broadcast-UI/static/js/2.688e9812.chunk.js",
+    "static/js/2.688e9812.chunk.js.map": "/Broadcast-UI/static/js/2.688e9812.chunk.js.map",
     "index.html": "/Broadcast-UI/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/Broadcast-UI/static/css/2.20aa2d7b.chunk.css.map",
-    "static/js/2.dd11f589.chunk.js.LICENSE.txt": "/Broadcast-UI/static/js/2.dd11f589.chunk.js.LICENSE.txt"
+    "static/js/2.688e9812.chunk.js.LICENSE.txt": "/Broadcast-UI/static/js/2.688e9812.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.62a46328.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.dd11f589.chunk.js",
-    "static/js/main.34f72773.chunk.js"
+    "static/js/2.688e9812.chunk.js",
+    "static/js/main.c64bd707.chunk.js"
   ]
 }

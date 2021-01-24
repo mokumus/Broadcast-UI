@@ -10,13 +10,18 @@
     "bootstrap": "^4.5.3",
     "firebase": "^8.2.2",
     "firebaseui": "^4.7.1",
+    "md5": "^2.3.0",
+    "md5-hash": "^1.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-google-login": "^5.2.2",
+    "react-phone-input-2": "^2.13.9",
+    "react-phone-number-input": "^3.1.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-share": "^4.3.1",
+    "react-twitter-embed": "^3.0.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

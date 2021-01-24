@@ -3,6 +3,11 @@ import React, { useRef , useState} from 'react';
 import { Form, Button, Card, Alert} from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import firebase from '../firebase'
+import md5 from 'md5-hash'
+
 
 export default function Signup(){
     const emailRef = useRef()
@@ -11,7 +16,10 @@ export default function Signup(){
     const { signup } = useAuth()
     const [ error, setError] = useState('')
     const [ loading, setLoading] = useState(false)
+    const [ phone, setPhone] = useState('')
     const history = useHistory()
+
+    const following = [];
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -21,6 +29,24 @@ export default function Signup(){
         }
 
         try {
+            console.log(phone)
+            console.log(emailRef.current.value)
+            console.log(md5(emailRef.current.value))
+
+            const entryRef = firebase.database().ref(md5(emailRef.current.value));
+
+            entryRef.push(phone)
+            entryRef.push("@GTU_SMS")
+            entryRef.push("@GTUOIDB")
+
+            
+
+            /*
+            firebase.database().ref(md5(emailRef.current.value)).push(phone)
+            firebase.database().ref(md5(emailRef.current.value)).push("@GTU_SMS")
+            firebase.database().ref(md5(emailRef.current.value)).push("@GTU_Ogrenci")
+            */         
+           
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
@@ -30,7 +56,7 @@ export default function Signup(){
         }
         setLoading(false)
 
-        
+
     }
 
     return (
@@ -43,6 +69,10 @@ export default function Signup(){
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" ref={emailRef} required></Form.Control>
+                        </Form.Group>
+                        <Form.Group id="phone">
+                            <Form.Label>Phone</Form.Label>
+                            <PhoneInput country={'tr'} onlyCountries={['tr']}  placeholder="Enter phone number" value={phone} onChange={setPhone} inputProps={{required: true}}/>
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>

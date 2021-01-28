@@ -11,7 +11,7 @@ export default function Dashboard(){
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
     const history = useHistory()
-    const [title, setTitle] = useState("")
+    const [title, setTitle] = useState("@")
     
 
 
@@ -38,7 +38,7 @@ export default function Dashboard(){
         const todoRef = firebase.database().ref(md5(currentUser.email));
 
         todoRef.push(title)
-        setTitle("")
+        setTitle("@")
     }
     
 

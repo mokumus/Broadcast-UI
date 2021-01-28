@@ -31,6 +31,9 @@ export default function Dashboard(){
     }
 
     const createTodo = () => {
+        if (title === ""){
+            return
+        }
 
         const todoRef = firebase.database().ref(md5(currentUser.email));
 

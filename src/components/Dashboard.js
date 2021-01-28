@@ -31,7 +31,7 @@ export default function Dashboard(){
     }
 
     const createTodo = () => {
-        if (title === "" || title.charAt(0) != "@"){
+        if (title === "" || title.charAt(0) != "@" || title.length <= 1){
             return
         }
 
